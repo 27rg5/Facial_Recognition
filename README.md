@@ -20,9 +20,7 @@ A Python-based system for detecting, tracking, and extracting video clips of a t
 
 Run the script using the following command:
 
-<code> 
-python video_processing.py --video_path /path/to/video.mp4 --reference_image_path /path/to/reference.jpg --output_dir /path/to/output 
-</code>
+<code>python video_processing.py --video_path /path/to/video.mp4 --reference_image_path /path/to/reference.jpg --output_dir /path/to/output</code>
 
 ## Limitations
 
