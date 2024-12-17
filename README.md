@@ -27,3 +27,4 @@ Run the script using the following command:
 - Requires good quality video input for optimal performance
 - Requires GPU 
 - Maximum tracking duration of 60 frames without redetection
+- Code works with MP4 videos and JPG/JPEG image files
