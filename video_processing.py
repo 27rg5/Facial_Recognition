@@ -57,7 +57,7 @@ class FaceTracker:      # Handles detection and tracking of faces in the video f
 
     def detect_faces(self, frame):          # Detect faces using face_recognition's CNN model
 
-        return face_recognition.face_locations(frame, number_of_times_to_upsample=1, model='cnn')
+        return face_recognition.face_locations(frame, number_of_times_to_upsample=1, model='cnn')   # 'number_of_times_to_upsample' parameter increases accuracy when target face in input video is very different in size from the reference image. 'model' parameter is set to 'cnn' instead of the default 'hog' for better accuracy. 
 
     def update_trackers(self, frame, current_frame):        # Update the trackers for all currently tracked faces and remove those that do not meet the quality threshold or have been lost for too long
       
@@ -269,7 +269,7 @@ def main():
             video_path=args.video_path,
             reference_image_path=args.reference_image_path,
             output_dir=args.output_dir,
-            face_threshold=0.6,
+            face_threshold=0.6,       # Parameter to adjust the severity of the facial recogniton model
             redetection_interval=30,
             min_clip_duration=0.5,
             max_frames_to_track=60
